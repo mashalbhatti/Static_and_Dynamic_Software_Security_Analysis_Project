@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFlowResults FileFormatVersion="102" TerminationState="Success">
+	<Results>
+		<Result>
+			<Sink Statement="specialinvoke r0.&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: void retrieveLocation()&gt;()" Method="&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)&gt;">
+				<AccessPath Value="r0" Type="lu.snt.trux.koopaapp.ui.home.TrainingFragment" TaintSubFields="true"></AccessPath>
+			</Sink>
+			<Sources>
+				<Source Statement="specialinvoke r0.&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: void retrieveLocation()&gt;()" Method="&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)&gt;">
+					<AccessPath Value="r0" Type="lu.snt.trux.koopaapp.ui.home.TrainingFragment" TaintSubFields="true"></AccessPath>
+				</Source>
+			</Sources>
+		</Result>
+		<Result>
+			<Sink Statement="specialinvoke r0.&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: void retrieveLocation()&gt;()" Method="&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;">
+				<AccessPath Value="r0" Type="lu.snt.trux.koopaapp.ui.home.TrainingFragment" TaintSubFields="true"></AccessPath>
+			</Sink>
+			<Sources>
+				<Source Statement="specialinvoke r0.&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: void retrieveLocation()&gt;()" Method="&lt;lu.snt.trux.koopaapp.ui.home.TrainingFragment: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;">
+					<AccessPath Value="r0" Type="lu.snt.trux.koopaapp.ui.home.TrainingFragment" TaintSubFields="true"></AccessPath>
+				</Source>
+			</Sources>
+		</Result>
+	</Results>
+	<PerformanceData>
+		<PerformanceEntry Name="CallgraphConstructionSeconds" Value="479"></PerformanceEntry>
+		<PerformanceEntry Name="TaintPropagationSeconds" Value="67"></PerformanceEntry>
+		<PerformanceEntry Name="PathReconstructionSeconds" Value="2"></PerformanceEntry>
+		<PerformanceEntry Name="TotalRuntimeSeconds" Value="592"></PerformanceEntry>
+		<PerformanceEntry Name="MaxMemoryConsumption" Value="2567"></PerformanceEntry>
+		<PerformanceEntry Name="SourceCount" Value="22"></PerformanceEntry>
+		<PerformanceEntry Name="SinkCount" Value="737"></PerformanceEntry>
+	</PerformanceData>
+</DataFlowResults>
